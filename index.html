@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Glassmorphism Card Design UI</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="glass-card">
+            <div class="part">
+                <div class="imgbox">
+                    <i class="fa fa-pencil-ruler"></i>
+                </div>
+
+                <div class="content">
+                    <h3>Design</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    </p>
+                    <a href="#"><span>Read More..</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="circle1"></div>
+    <div class="circle2"></div>
+
+    <!--for 3d tilt effect --------------- vanila-tilt.js-->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js">
+    </script>
+
+    <!--simple javascript code to apply vanila-tilt js-->
+    <script type="text/javascript">
+        VanillaTilt.init(document.querySelector(".glass-card"), {
+            max: 15,
+            speed: 200,
+            glare: true,
+            "max-glare": 1,
+            perspective: 1000,
+            transition: true
+        });
+    </script>
+
+</body>
+
+</html>
